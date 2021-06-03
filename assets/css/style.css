@@ -57,3 +57,57 @@ h1, h2 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* hero image */
+
+#cover-text, #cover-text h2 {
+    color: #ffff;
+
+}
+
+#hero-outer {           /*used to contain the hero image*/
+    height: 600px;
+    width: 100%;
+    overflow: hidden;    /*prevents image from overlapping with title and nav links */
+}
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+
+     /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;              */'forwards' means that the image zooms in, and stays at that size */gi
+}
+
+/* creates level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);    /* from scale(1) means we're starting with the image at 100% of its size */ 
+    }
+    to {
+        transform: scale(1.1); /* to scale (1.1) means we're ending with the image 10% larger than its original size */
+    }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Caveat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+}
+
