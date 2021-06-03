@@ -34,9 +34,26 @@ h1, h2 {
     float: right;
 }
 
-#menu ul li {
+#menu, #logo {
+    line-height: 75px; /*aligns the letters on the logo and the menu. By default letters are vertically centered within its line height */
+}
+
+#menu li {
     margin-right: 30px;
     list-style-type: none;
     display: inline-block;
     text-align: right;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;  /*could also use "text-decoration: underline",but you will have no control over the underline thickness and color */
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
