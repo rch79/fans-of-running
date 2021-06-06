@@ -211,16 +211,20 @@ hr {
 
 /*footer*/
 footer {
-    text-align: center;
     height: 150px;
 }
 
-footer div {
-    margin: 10%;
+footer ul {
+    text-align: center;
 }
 
-footer ul {
+footer li {
     display: inline;
-    font-size: 160%;
+}
+
+ul i {
+    font-size: 150%;
+    margin: 1%;
     padding: 5%;
+    color: #3a3a3a;
 }
