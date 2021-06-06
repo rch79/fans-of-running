@@ -208,3 +208,19 @@ hr {
 #meeting-times h2 {
     color: #fafafa;
 }
+
+/*footer*/
+footer {
+    text-align: center;
+    height: 150px;
+}
+
+footer div {
+    margin: 10%;
+}
+
+footer ul {
+    display: inline;
+    font-size: 160%;
+    padding: 5%;
+}
