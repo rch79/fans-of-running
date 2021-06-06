@@ -228,3 +228,15 @@ footer ul i {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/*gallery*/
+#photos {
+    clear: both;    /* tells brower to display photos below header and above footer */
+    line-height: 0; /* removes horizontal gap between pictures */
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos > img {
+    width: 100%;    /* makes sure photos don't overlap */
+}
