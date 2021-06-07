@@ -277,6 +277,10 @@ footer ul i {
         padding: 0;
     }
 
+    #photos {
+        column-count: 3;
+    }
+
     hr {
         display: none;
     }
@@ -315,5 +319,11 @@ footer ul i {
     .left-about-heading p, .right-about-heading p {
         text-align: center;
         padding: 0 20px;
+    }   
+}
+
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
     }
 }
