@@ -270,6 +270,13 @@ footer ul i {
         padding: 0;
     }
 
+    #meeting-times > div {
+        clear: both;        /* divs will stack on top of one another */
+        width: 100%;
+        height: 150px;
+        padding: 0;
+    }
+
     hr {
         display: none;
     }
